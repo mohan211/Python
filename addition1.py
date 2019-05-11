@@ -1,4 +1,5 @@
 n1=10
 n2=20
-sum=int(n1)+int(n2)
-print("The sum of 10 and 20 is:",sum)
+n3=30
+sum=int(n1)+int(n2)+int(n3)
+print("The sum of :",sum)
