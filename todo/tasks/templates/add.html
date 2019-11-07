@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add a new task here</title>
+</head>
+<body>
+<form action="{% url 'addtask' %}" method="post">
+	{% csrf_token %}
+	<label for = "title">Title</label>
+	<input type="text" name="title" id="title" /><br>
+	<label for = "text">Title</label>
+	<textarea name ="text" id="text"></textarea><br><br>
+	<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task details page</title>
+</head>
+<body>
+{% if task %}
+
+	<li>{{task.title}}</li>
+	<li>{{task.text}}</li>
+	<li>{{task.created_at}}</li>
+
+<a href="delete/{{task.id}}">Delete</a>
+
+{% else %}
+<p>No tasks available</p>
+{% endif %}
+
+</body>
+</html>
